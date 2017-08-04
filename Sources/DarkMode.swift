@@ -4,7 +4,7 @@ struct DarkMode {
 	private static let prefix = "tell application \"System Events\" to tell appearance preferences to"
 
 	static var isDark: Bool {
-		return Bool(runAppleScript("\(prefix) get dark mode")!)!
+		return UserDefaults.standard.string(forKey: "AppleInterfaceStyle") == "Dark"
 	}
 
 	static func toggle(force: Bool? = nil) {
