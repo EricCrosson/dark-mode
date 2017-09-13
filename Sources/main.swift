@@ -28,11 +28,11 @@ case "--help"?:
 case "--version"?:
 	print(VERSION)
 case "status"?:
-	print(DarkMode.isDark ? "on" : "off")
+	print(DarkMode.isEnabled ? "on" : "off")
 case "on"?:
-	DarkMode.enable()
+	DarkMode.isEnabled = true
 case "off"?:
-	DarkMode.disable()
+	DarkMode.isEnabled = false
 default:
 	DarkMode.toggle()
 }
