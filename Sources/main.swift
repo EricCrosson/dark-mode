@@ -3,18 +3,20 @@ import Foundation
 let VERSION = "2.0.1"
 
 func showUsage() {
-	printMultiline(
-		"",
-		"  Usage",
-		"    $ dark-mode [command]",
-		"",
-		"  Commands",
-		"    <none>  Toggle dark mode",
-		"    on      Enable dark mode",
-		"    off     Disable dark mode",
-		"    status  Dark mode status",
-		"",
-		"  Created by Sindre Sorhus"
+	print(
+		"""
+
+		  Usage
+		    $ dark-mode [command]
+
+		  Commands
+		    <none>  Toggle dark mode
+		    on      Enable dark mode
+		    off     Disable dark mode
+		    status  Dark mode status
+
+		  Created by Sindre Sorhus
+		"""
 	)
 }
 
